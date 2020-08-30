@@ -110,7 +110,7 @@ p {
   list-style: none;
 }
 
-.list li {
+.list li:not(:last-child) {
   padding: 0.5rem 0;
   border-bottom: #444 dotted 1px;
 }
@@ -167,6 +167,11 @@ p {
   display: flex;
 }
 
+#what h3 {
+  float: right;
+  margin-right: 1.5rem;
+}
+
 #what .items .item {
   flex: 1;
   padding: 1rem;
@@ -208,9 +213,15 @@ p {
   display: flex;
 }
 
+
+#contact .contact-form {
+  padding-left: 5rem;
+}
+
 #contact .map,
 #contact .contact-form {
   flex: 1;
+  gap: 1rem;
 }
 
 #contact .contact-form .form-group {
